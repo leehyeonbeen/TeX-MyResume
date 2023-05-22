@@ -1,0 +1,157 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% "ModernCV" CV and Cover Letter
+% LaTeX Template
+% Version 1.3 (29/10/16)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Xavier Danaux (xdanaux@gmail.com) with modifications by:
+% Vel (vel@latextemplates.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template requires the moderncv.cls and .sty files to be in the same 
+% directory as this .tex file. These files provide the resume style and themes 
+% used for structuring the document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt,a4paper,roman]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+
+\moderncvstyle{classic} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+\setlength{\hintscolumnwidth}{3.6cm}
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+
+\usepackage[scale=0.8, top=2cm, bottom=2cm]{geometry} % Reduce document margins
+%\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
+\setlength{\makecvtitlenamewidth}{12cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+\firstname{Hyeonbeen} % Your first name
+\familyname{Lee} % Your last name
+
+% All information in this block is optional, comment out any lines you don't need
+\title{Curriculum Vitae}
+%\address{123 Broadway}{City, State 12345}
+\phone{+82-10-6236-4693}
+\email{lhbsharp@khu.ac.kr}
+\homepage{github.com/hyeonbeenlee}{Github: https://github.com/hyeonbeenlee} % The first argument is the url for the clickable link, the second argument is the url displayed in the template - this allows special characters to be displayed such as the tilde in this example
+\extrainfo{M.S. Candidate in Kyunghee University}
+\photo[70pt][0.1pt]{pictures/passport} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
+%\quote{"A witty and playful quotation" - John Smith}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	COVER LETTER
+%----------------------------------------------------------------------------------------
+
+% To remove the cover letter, comment out this entire block
+
+\clearpage
+
+%\recipient{HR Department}{Corporation\\123 Pleasant Lane\\12345 City, State} % Letter recipient
+%\date{\today} % Letter date
+%\opening{Dear Sir or Madam,} % Opening greeting
+%\closing{Sincerely yours,} % Closing phrase
+%\enclosure[Attached]{curriculum vit\ae{}} % List of enclosed documents
+
+%\makelettertitle % Print letter title.
+
+%\lipsum[1-2] % Dummy text
+%\lipsum[4] % Dummy text
+
+%\makeletterclosing % Print letter signature
+
+%\newpage
+
+%----------------------------------------------------------------------------------------
+%	CURRICULUM VITAE
+%----------------------------------------------------------------------------------------
+
+\makecvtitle % Print the CV title
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+\section{RESEARCH INTEREST}
+\cvlistdoubleitem{Robotics simulation}{Sensor fusion and control}
+\cvlistdoubleitem{Physically consistent ML}{Data-driven modeling}
+
+
+\section{EDUCATION}
+\cventry{Mar. 2022--Present\\ \small Yongin, South Korea}{Kyunghee University}{\newline Master's Course in Mechanical Engineering}{}{\newline \textit{GPA -- 4.15/4.3 (4.38/4.5)} (Advisor: Prof. Jin-gyun Kim)}{}
+\cventry{Mar. 2015--Feb. 2022\\ \small Yongin, South Korea}{Kyunghee University}{\newline B.S. in Mechanical Engineering}{}{\newline\textit{GPA -- 3.60/4.3 (3.87/4.5)} (Advisor: Prof. Jin-gyun Kim)}{}
+
+
+\section{PUBLICATIONS}
+\cvitem{}{\textbf{H. Lee}, S. Han, H.S. Choi, J.G. Kim. \textit{``cNN-DP: Composite neural network with differential propagation for impulsive nonlinear dynamics''}, revised from \textit{Journal of Computational Physics} (IF=4.645), \url{http://ssrn.com/abstract=4296911}}
+\cvitem{}{S. Han, G.E. Jeong, \textbf{H. Lee}, W.S. Choi, J.G. Kim, \textit{``Multi-body dynamics model for spent nuclear fuel transportation system under normal transport test conditions''}, submitted to \textit{Nuclear Engineering and Technology} (IF=2.817).
+}
+
+
+
+\section{PRESENTATIONS}
+\cvitem{18$^{th}$ May 2023\\ \small Busan, South Korea}{\textbf{H. Lee}, S. Han, H.S. Choi, J.G. Kim. \textit{``Composite neural network with differential propagation for modeling nonlinear impulsive dynamics''}, Conference on Dynamics and Control, Korean Society of Mechanical Engineers (Oral Presentation)}
+\cvitem{23$^{rd}$ Mar. 2023\\ \small Jeju, South Korea}{\textbf{H. Lee}, S. Han, H.S. Choi, J.G. Kim. \textit{``Meta-modeling of nonlinear impulsive dynamics using composite neural network model with differential propagation''}, Conference on Engineering Reliability, Korean Society of Mechanical Engineers (Oral Presentation)}
+\cvitem{16$^{th}$ Feb. 2023\\ \small Austin, TX, USA}{\textbf{H. Lee}, S. Han, H.S. Choi, J.G. Kim. \textit{``Composite neural network framework for modeling impulsive nonlinear dynamic responses''}, IMAC XLI 2023 (Oral Presentation)}
+\cvitem{4$^{th}$ Dec. 2022\\ \small Jeju, South Korea}{\textbf{H. Lee}, S. Han, G.E. Jeong, J.G. Kim. \textit{``Development of multibody dynamics trailer model using normal transportation test data and DNN based surrogate model generation''}, Korean Society for Noise and Vibration Engineering (Oral Presentation).}
+
+
+
+\section{GRANTS}
+\subsection{Ongoing}
+\cvitem{Jan. 2022--Present}{\textit{Deep-learning based reaction force and torque prediction model development for underwater ground cutting robot using experimental measurements and dynamic simulation data}, Korea Research Institute of Ships and Ocean Engineering (KRISO).}
+\cvitem{May 2022--Present}{\textit{Metamodel generation and evolution procedures for flexible multibody dynamics}, FunctionBay Inc.}
+\subsection{Completed}
+\cvitem{Sep. 2021--Oct. 2022}{\textit{Development of ground$\cdot$sea transportation test simulation model using multibody dynamics and DNN-based metamodel}, Korea Atomic Energy Research Institute (KAERI).}
+
+
+\section{SKILLS}
+\cvlistdoubleitem{Well-skilled at Python \& Linux}{PyTorch}
+\cvlistdoubleitem{\small{RecurDyn(Multibody Dynamics Simulation)}}{C++/C\#}
+
+\section{AWARDS AND HONORS}
+\cventry{Spring 2021}{Academic Excellence Scholarship (Full Tuition)}{}{}{\newline Dept. of Mechanical Engineering, Kyunghee University}{}
+
+
+%\cventry{\cvitem}{}{institution or employer}{city}{grade}{description}{Spring 2021}{\newline \small }
+
+
+\section{CONFERENCES}
+\cvitem{May 2023\\ \small Busan, South Korea}{Conference on Dynamics and Control\newline \small Korean Society of Mechanical Engineers (KSME)}
+\cvitem{Mar. 2023\\ \small Jeju, South Korea}{Conference on Engineering Reliability\newline \small Korean Society of Mechanical Engineers (KSME)}
+\cvitem{Feb. 2023\\ \small Austin, TX, USA}{IMAC-XLI\newline \small Society for Experimental Mechanics (SEM)}
+\cvitem{Nov. 2022\\ \small Jeju, South Korea}{Fall Academic Conference\newline \small Korean Society for Noise and Vibration Engineering (KSNVE)}
+\cvitem{Aug. 2022\\ \small Seoul, South Korea}{AI Summer School 2022\newline \small Korean Society of Mechanical Engineers (KSME)}
+\cvitem{Apr. 2022\\ \small Suwon, South Korea}{Conference on Dynamics and Control\newline \small Korean Society of Mechanical Engineers (KSME)}
+\cvitem{Mar. 2022\\ \small Jeju, South Korea}{Conference on Engineering Reliability\newline \small Korean Society of Mechanical Engineers (KSME)}
+\cvitem{Aug. 2021\\ \small Online}{AI Summer School 2021\newline \small Korean Society of Mechanical Engineers (KSME)}
+\cvitem{Apr. 2021\\ \small Online}{\textit{``AI, Data Driven Models \& Machine Learning: How Will Advanced Technologies Shape Future Simulation Processes?''}\newline \small National Agency Finite Element Methods and Standard (NAFEMS)}
+
+
+
+\section{MISCELLANEOUS}
+\cventry{2022--Present}{Department Office Assistant}{}{}{\newline Dept. of Mechanical Engineering, Kyunghee University}{}
+\cventry{2022}{Teaching Assistant (Multibody Dynamics)}{}{}{\newline Dept. of Mechanical Engineering, Kyunghee University}{}
+\cventry{2021--2022}{Undergraduate Research Assistant}{}{}{\newline Modeling and Simulation Lab, Kyunghee University (Advisor: Jin-gyun Kim)}{Research Topic: Acceleration of dynamic simulation process using deep learning based approach}
+\cventry{2021--2022}{Bachelor's Thesis Project Leader}{}{}{\newline Aerodynamic Design Exploration \& Big Data Analysis Lab, Kyunghee University  (Advisor: Prof. Shin-kyu Jeong)}{Research Topic: Data-driven aerodynamic coefficient prediction using Deep Neural Network and PARSEC airfoil parameterization}
+\cventry{2017--2019\\ \small Pohang, South Korea}{Republic of Korea Marine Corps}{}{}{\newline Honorably Discharged as a Sergeant at $1^{st}$ Marine Division}{}
+
+
+
+\end{document}
