@@ -5,8 +5,12 @@ from pillow_heif import register_heif_opener
 
 register_heif_opener()
 
-jpegs = glob.glob("pictures/styled_pics/*.JPEG")
-heics = glob.glob("pictures/styled_pics/*.HEIC")
+jpegs = glob.glob("pictures/styled_pics/*.JPEG") + glob.glob(
+    "pictures/styled_pics/*.jpeg"
+)
+heics = glob.glob("pictures/styled_pics/*.HEIC") + glob.glob(
+    "pictures/styled_pics/*.heic"
+)
 
 for p in jpegs + heics:
     filepath = ".".join(p.split(".")[:-1])
