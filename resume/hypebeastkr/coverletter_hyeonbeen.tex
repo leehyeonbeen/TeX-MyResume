@@ -1,0 +1,64 @@
+% Document class and font size
+\documentclass[a4paper,10pt]{extarticle}
+
+% Packages
+\usepackage[utf8]{inputenc} % For input encoding
+\usepackage{geometry} % For page margins
+\geometry{a4paper, margin=0.75in} % Set paper size and margins
+\usepackage{titlesec} % For section title formatting
+\usepackage{enumitem} % For itemized list formatting
+\usepackage{hyperref} % For hyperlinks
+\usepackage{kotex}
+\usepackage{graphicx}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage{tasks}
+\usepackage{setspace}
+
+% Formatting
+\setlist{noitemsep} % Removes item separation
+\titleformat{\section}{\large\bfseries}{\thesection}{1em}{}[\titlerule] % Section title format
+\titlespacing*{\section}{0pt}{\baselineskip}{\baselineskip} % Section title spacing
+\graphicspath{{../../pictures}}
+\setlength\parindent{0pt} %no indentation
+
+% Begin document
+\begin{document}
+% Disable page numbers
+\pagestyle{empty}
+% Enable page numbers
+% \pagenumbering{arabic}
+
+% Header
+\begin{spacing}{1.2}
+	\normalsize January 15, 2025 \hfill\large\textbf{HYPEBEAST Korea Recruitment Team}\\
+	\normalsize \null\hfill HYPEBEAST Korea Co., Ltd.\\
+	\normalsize \null\hfill 818, Seolleung-ro, Gangnam-gu,\\
+	\null\hfill Seoul, South Korea, 06014
+\end{spacing}
+
+Dear respected person in charge,\\
+
+hi\\
+
+Sincerely yours,\\
+
+\begin{spacing}{1.2}
+	\textbf{\large Hyeonbeen Lee}\\
+	\normalsize
+	6-3, Hoenamu-ro 39gil, Yongsan-gu,\\
+	Seoul, South Korea, 04344
+\end{spacing}
+\small
+\begin{tabular}{@{}ll}
+	\textbf{Mobile: }         & \href{tel:+82-10-6236-4693}{+82-10-6236-4693}                                                                 \\
+	\textbf{EMail: }          & \href{mailto:edward.hyeonbeen.lee@gmail.com}{edward.hyeonbeen.lee@gmail.com}                                  \\
+	\textbf{Instagram: }      & \href{https://www.instagram.com/leehyeonbeen}{@leehyeonbeen}                                                  \\
+	\textbf{GitHub: }         & \href{https://github.com/hyeonbeenlee}{github.com/hyeonbeenlee}                                               \\
+	\textbf{LinkedIn: }       & \href{https://www.linkedin.com/in/hyeonbeen-lee-239500286/}{linkedin.com/in/hyeonbeen-lee-239500286}          \\
+	\textbf{Google Scholar: } & \href{https://scholar.google.com/citations?user=TiduRxoAAAAJ}{scholar.google.com/citations?user=TiduRxoAAAAJ} \\
+\end{tabular}
+\newline\newline
+\large\textit{Attached: Curriculum vitae, personal portfolio}
+
+\end{document}
