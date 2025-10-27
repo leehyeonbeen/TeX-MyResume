@@ -14,6 +14,7 @@
 \usepackage{longtable}
 \usepackage{tasks}
 \usepackage{multirow}
+\usepackage{multicol}
 \usepackage{tabularx, booktabs}
 \usepackage{enumitem}
 % Formatting
@@ -36,7 +37,7 @@
 
 % Header
 \begin{center}
-	{\huge \textsc{Edward Hyeonbeen Lee}}
+	{\huge \textsc{Hyeonbeen (Edward) Lee}}
 \end{center}
 
 % \vspace*{-0.7cm}
@@ -102,11 +103,6 @@
 % 	\end{longtable}
 % \end{center}
 
-\section*{RESEARCH INTEREST}
-\textbf{Robot learning, Sequential modeling, Robust autonomy, Multimodal perception, Interpretable AI}
-% My works so far focus on accurate modeling of dynamic responses in contact-rich scenarios, which was a joyful journey with motivation. I desire to build a reliable robot intelligence that can robustly handle complex real-world interactions.
-% \vspace*{-0.5cm}
-
 
 % Education Section
 \section*{EDUCATION}
@@ -116,12 +112,17 @@ M.S. in Mechanical Engineering (Advisor: Jin-gyun Kim) \hfill GPA: 3.93/4.0\\ % 
 % Thesis: \textit{{\small `Composite neural network with differential propagation}}\\
 % \hspace*{1.3cm}\textit{\small{for modeling impulsive nonlinear dynamic systems'}}\\
 \textbf{Kyung Hee University} \hfill Mar. 2015 | Feb. 2022\\ % University name and location
-B.S. in Mechanical Engineering (Advisor: Jin-gyun Kim, Shin-kyu Jeong)\hfill GPA: 3.52/4.0 % B.S. Overall 3.52/4.0 ,3.599/4.3, 3.84/4.5
+B.S. in Mechanical Engineering (Advisor: Jin-gyun Kim)\hfill GPA: 3.52/4.0 % B.S. Overall 3.52/4.0 ,3.599/4.3, 3.84/4.5
 % Degree and GPA
 % Thesis: \textit{{\small `Data-driven aerodynamic coefficient prediction using}} \hfill \textbf{GPA(Major): 3.51/4.0}\\  % B.S. Major 3.51/4.0, 3.573/4.3, ,3.87/4.5 
 % \hspace*{1.3cm}\textit{{\small deep neural
 % network and PARSEC airfoil parameterization'}} \\
 % \textbf{Banpo High School}, Science-specialized Track \hfill Mar. 2012 | Feb. 2015
+
+\section*{RESEARCH INTEREST}
+Robot learning, Sequential modeling, Multimodal perception,  Physics-informed learning
+% My works so far focus on accurate modeling of dynamic responses in contact-rich scenarios, which was a joyful journey with motivation. I desire to build a reliable robot intelligence that can robustly handle complex real-world interactions.
+% \vspace*{-0.5cm}
 
 % Experience Section
 \section*{PUBLICATIONS}
@@ -138,49 +139,64 @@ B.S. in Mechanical Engineering (Advisor: Jin-gyun Kim, Shin-kyu Jeong)\hfill GPA
 \noindent\textbf{Kyung Hee University} \hfill Postgraduate Researcher\\
 Modeling \& Simulation Lab., advised by \textsl{Jin-gyun Kim} \hfill Mar. 2024 | Present\\
 \vspace*{-0.25cm}\\
-\begin{minipage}{0.75\textwidth}
+\begin{minipage}{0.77\textwidth}
 	\small
 	\begin{itemize}
-		\item Developing a generalized framework for forecasting high-frequency force measurements of robot in contact-rich manipulation scenarios.
+		\item \textbf{Ongoing:} Developed a scalable generative framework for forecasting high-frequency forces of robots in contact-rich manipulation scenarios. Finalizing a manuscript for publication.
+		      % \item Executed a national research grant (\href{https://www.kriso.re.kr/eng/}{KRISO}) by improving the accuracy and inference speed of the force forecasting model.
+		      % \item Accelerated inference by structural parallelization, compiling, and mixed precision for real-time system application.
 	\end{itemize}
 \end{minipage}\\
+
+% \noindent\textbf{Freelance AI Researcher} \hfill \\
+% \null \hfill Mar. 2024 | Present\\
+% \vspace*{-0.25cm}\\
+% \begin{minipage}{0.77\textwidth}
+%   \small
+%   \begin{itemize}
+%       \item Developed a scalable framework for forecasting high-frequency forces of robot in contact-rich manipulation scenarios.
+%             % \item Accelerated inference by structural parallelization, compiling, and mixed precision for real-time system application.
+%   \end{itemize}
+% \end{minipage}\\
 
 % \noindent\textbf{Freelance AI developer} \hfill Freelancer\\
 % --- \hfill Mar. 2024 | Present\\
 % \hspace*{0.46cm}
 
-\noindent\textbf{KAIST Graduate School of AI} \hfill Pre-Ph.D Research Intern\\
-Cognitive Learning for Vision \& Robotics Lab., advised by \textsl{Joseph J. Lim} \hfill Sep. 2023 | Dec. 2023\\
+\noindent\textbf{KAIST Graduate School of AI} \hfill Pre-Ph.D Intern\\
+Cognitive Learning for Vision \& Robotics Lab., advised by \textsl{Joseph J. Lim} \hfill Sep. 2023 | Nov. 2023\\
 \vspace*{-0.25cm}\\
-\begin{minipage}{0.75\textwidth}
+\begin{minipage}{0.77\textwidth}
 	\small
 	\begin{itemize}
-		\item Investigated skill-based reinforcement learning and skill prior extraction methodologies for learning-based robot control.
+		\item Analyzed and implemented skill prior accelerated reinforcement learning (SPiRL), and delivered a technical presentation to the lab.
+		      % \item Investigated reinforcement learning for robots and skill prior extraction methodologies for learning-based long-horizon robot control.
 	\end{itemize}
 \end{minipage}\\
 
 
-\noindent\textbf{Kyung Hee University} \hfill Master Student\\
+\noindent\textbf{Kyung Hee University} \hfill M.S. Student\\
 Modeling \& Simulation Lab., advised by \textsl{Jin-gyun Kim} \hfill Mar. 2022 | Feb. 2024\\
 \vspace*{-0.25cm}\\
-\begin{minipage}{0.75\textwidth}
+\begin{minipage}{0.77\textwidth}
 	\small
 	\begin{itemize}
-		\item Led the development of a novel composite neural network (cNN-DP) for modeling impulsive nonlinear dynamics, resulting in a first-author publication in \textit{Journal of Computational Physics}.
-		\item Executed and secured a national research grant by designing a deep generative forecasting model to predict reaction forces of underwater excavation robot.
-		\item Contributed to a government-funded project by developing a DNN-based surrogate model for multi-body dynamics, leading to a co-authored publication in \textit{Nuclear Engineering and Technology}.
-		\item Implemented and analyzed deep time-series and image models from scratch to expand the works for the real-world, multi-modal robotic systems.
+		\item Proposed a novel neural network architecture to model nonlinear dynamic systems with strong local oscillations. Resulted in a first-author publication in \textit{Journal of Computational Physics}.
+		\item Accurately modeled real-world vehicle dynamics via neural metamodeling and high-fidelity simulation for a national research grant by \href{https://www.kaeri.re.kr/eng/}{KAERI}. Resulted in a co-authored publication in \textit{Nuclear Engineering and Technology}.
+		\item Designed a generative model to estimate real-time, contact-rich joint forces of a marine excavation robot for a national grant by \href{https://www.kriso.re.kr/eng/}{KRISO}.
+		\item Actively explored and implemented methods from diverse ML domains, including robot learning, physics-informed learning, computer vision, time-series forecasting, and system identification.
+		      % \item Implemented foundational deep models from scratch, adapting them to analyze multi-modal [force/vision] data from real-world
 	\end{itemize}
 \end{minipage}\\
 
 \vspace*{0.1cm}
-\noindent\textbf{Kyung Hee University} \hfill Undergraduate Research Intern\\
+\noindent\textbf{Kyung Hee University} \hfill Undergraduate Researcher\\
 Modeling \& Simulation Lab., advised by \textsl{Jin-gyun Kim} \hfill Jan. 2021 | Feb. 2022\\
-\vspace*{-0.25cm}
-\begin{minipage}{0.75\textwidth}
+\vspace*{-0.25cm}\\
+\begin{minipage}{0.77\textwidth}
 	\small
 	\begin{itemize}
-		\item Investigated data-driven methods for flexible multi-body dynamics.
+		\item Investigated data-driven methods for flexible multi-body dynamics as part of a national research grant on vehicle dynamics simulation.
 	\end{itemize}
 \end{minipage}\\
 \vspace*{-0.2cm}
@@ -289,27 +305,82 @@ Modeling \& Simulation Lab., advised by \textsl{Jin-gyun Kim} \hfill Jan. 2021 |
 \vspace*{-.5cm}
 \begin{longtable}{LR}
 	\href{https://easychair.org/publications/preprint/WkF3}{J. Han, J.B. Han, S.S. Kim, M.H. Kim, Y.H. Kim, \textbf{H. Lee}, J.G. Kim, T.K. Yeu. “Digital twin model of underwater construction robot for real-time grinding simulation”, \textit{7th International Conference on Multibody System Dynamics}. }                                                                                                                                  & {Jun. 9 2024 \linebreak Madison, WI, USA}     \\
-	\href{https://www.dbpia.co.kr/Journal/articleDetail?nodeId=NODE11709087}{\textbf{H. Lee}, J. Han, T. Yeo, J.G. Kim. “Real-time multi-horizon reaction force forecasting of ocean robot using interpretable Transformer”, \textit{Annual Conference, Korean Society of Mechanical Engineers} (Oral Presentation).}                                                                                                                            & {Nov. 1 2023 \linebreak Incheon, South Korea} \\
+	\href{https://www.dbpia.co.kr/Journal/articleDetail?nodeId=NODE11709087}{\textbf{H. Lee}, J. Han, T. Yeo, J.G. Kim. “Real-time multi-horizon reaction force forecasting of marine robot using interpretable Transformer”, \textit{Annual Conference, Korean Society of Mechanical Engineers} (Oral Presentation).}                                                                                                                           & {Nov. 1 2023 \linebreak Incheon, South Korea} \\
 	\href{https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11511050}{\textbf{H. Lee,} S. Han, H.S. Choi, J.G. Kim. “Meta-modeling of nonlinear impulsive dynamics using composite neural network model with differential propagation”, \textit{Conference on Engineering Reliability, Korean Society of Mechanical Engineers} (\textbf{Excellent Paper Award}, Oral Presentation). \textsl{Extended works from IMAC 2023 presentation.}} & {May 18 2023 \linebreak Busan, South Korea}   \\
 	% \href{https://www.dbpia.co.kr/Journal/articleDetail?nodeId=NODE11527668}{\textbf{H. Lee,} S. Han, H.S. Choi, J.G. Kim. “Composite Neural Network with Differentiation Propagation for Modeling Nonlinear Impulsive Dynamics”, \textit{Conference on Dynamics and Control, Korean Society of Mechanical Engineers} (Oral Presentation)}.                                        & {Mar. 23 2023 \linebreak Jeju, South Korea}   \\
 	\href{https://link.springer.com/chapter/10.1007/978-3-031-34946-1_21}{\textbf{H. Lee,} S. Han, H.S. Choi, J.G. Kim. “Composite neural network framework for modeling impulsive nonlinear dynamic responses”, \textit{41th International Modal Analysis Conference (IMAC)} (Oral Presentation).}                                                                                                                                              & {Feb. 16 2023 \linebreak  Austin, TX, USA}    \\
 	\textbf{H. Lee}, J.G. Kim. “Development of multibody dynamics trailer model using normal transportation test data and DNN based surrogate model generation”, \textit{Fall conference, Korean Society for Noise and Vibration Engineering} (Oral Presentation).                                                                                                                                                                               & {Dec. 4 2022 \linebreak Jeju, South Korea}    \\
 \end{longtable}
 
+\section*{SKILLS}
+\begin{itemize}
+	\item \textbf{Programming Languages: }Python $\cdot$ MATLAB $\cdot$ C\# $\cdot$ C++ $\cdot$ \LaTeX
+	\item \textbf{Software \& Frameworks: }PyTorch $\cdot$ TensorBoard $\cdot$ Git $\cdot$ Docker $\cdot$ ROS $\cdot$ RecurDyn $\cdot$ Gazebo $\cdot$ MuJoCo
+	      % \item \textbf{Machine Learning: }Time series forecasting $\cdot$ Skill-based reinforcement learning $\cdot$ Image segmentation $\cdot$ Self-supervised learning $\cdot$ $\cdot$ Physics-informed learning $\cdot$ Frequency domain learning $\cdot$ Foundation model fine-tuning
+	\item \textbf{Scientific Computing: }Flexible multibody dynamics $\cdot$ Finite element methods $\cdot$ Numerical analysis
+	\item \textbf{Natural Languages: }Korean (native) $\cdot$ English and Japanese (advanced proficiency)
+	      %   \begin{itemize}
+	      %       \item \textit{Expertised at handling \underline{sequential data and models}}
+	      %   \end{itemize}
+	      % \item \textbf{English: }Speaks at native level
+	      % \item \textbf{Japanese: }Speaks at intermediate level
+\end{itemize}
 
 % Experience Section
 \setlength{\itemsep}{10pt} % Set to 0 to remove space
 \section*{PROJECTS}
 \begin{itemize}
-	\item Segment Anyone: Fine-tuned Segment-Anything-Model (SAM) for human-collaborative robots, Kyung Hee University Dept. of Artifical Intelligence. (\href{https://github.com/leehyeonbeen/segment-anything-fine-tuning}{github.com/leehyeonbeen/segment-anything-fine-tuning})
+	\item Segment-Anybody, at \textit{Kyung Hee University Dept. of AI.} (\href{https://github.com/leehyeonbeen/segment-anything-fine-tuning}{github.com/leehyeonbeen/segment-anything-fine-tuning})
 
-	\item Deep sequence-to-sequence models from scratch: From RNN to advanced Transformer variants, Personal project. (\href{https://github.com/leehyeonbeen/TimeSeriesSeq2Seq}{github.com/leehyeonbeen/TimeSeriesSeq2Seq})
+	      {\small
+		      \vspace*{-0.2cm}
+		      \begin{itemize}
+			      \item Fine-tuned Meta's Segment-Anything Model (SAM) for detailed human body parts segmentation in human-robot interaction. Doubled its IoU scores on the public PASCAL-VOC 2010 dataset.
+		      \end{itemize}
+		      \vspace*{-0.2cm}
+	      }
+	\item ROS SLAM guide for Apple Silicon devices, \textit{Personal project}. (\href{https://github.com/leehyeonbeen/ROS-SLAM-AppleSilicon}{github.com/leehyeonbeen/ROS-SLAM-AppleSilicon})
 
-	\item ROS SLAM one-shot setup for Apple Silicon devices, Personal project. (\href{https://github.com/leehyeonbeen/ROS-SLAM-AppleSilicon}{github.com/leehyeonbeen/ROS-SLAM-AppleSilicon})
+	      {\small
+			      \vspace*{-0.2cm}
+			      \begin{itemize}
+				      \item Addressed ROS TurtleBot3 SLAM and Gazebo compatibility issues on the latest Mac devices.
+			      \end{itemize}
+			      \vspace*{-0.2cm}
+		      }
 
-	\item cNN-DP: Composite neural network with differential propagation for impulsive nonlinear dynamics, Modeling \& Simulation Lab. (\href{https://github.com/leehyeonbeen/cNN-DP}{github.com/leehyeonbeen/cNN-DP})
 
-	\item RecurDyn Automation using Python, Modeling \& Simulation Lab. (\href{https://github.com/leehyeonbeen/RecurDynPython}{github.com/leehyeonbeen/RecurDynPython})
+	\item Deep seq2seq from scratch, \textit{Personal project}. (\href{https://github.com/leehyeonbeen/TimeSeriesSeq2Seq}{github.com/leehyeonbeen/TimeSeriesSeq2Seq})
+
+	      {\small
+			      \vspace*{-0.2cm}
+			      \begin{itemize}
+				      \item Scratch-implemented deep sequence-to-sequence models, from RNN to Transformer variants.
+			      \end{itemize}
+			      \vspace*{-0.2cm}
+		      }
+
+
+
+	\item cNN-DP, at \textit{Modeling \& Simulation Lab}. (\href{https://github.com/leehyeonbeen/cNN-DP}{github.com/leehyeonbeen/cNN-DP})
+
+	      {\small
+			      \vspace*{-0.2cm}
+			      \begin{itemize}
+				      \item Official implementation of the \textit{Journal of Computational Physics} paper.
+			      \end{itemize}
+			      \vspace*{-0.2cm}
+		      }
+
+	\item RecurDyn ProcessNet with Python, at \textit{Modeling \& Simulation Lab}. (\href{https://github.com/leehyeonbeen/RecurDynPython}{github.com/leehyeonbeen/RecurDynPython})
+
+	      {\small
+			      \vspace*{-0.2cm}
+			      \begin{itemize}
+				      \item Automated flexible multibody dynamics (FMBD) simulations of RecurDyn in parallel.
+			      \end{itemize}
+			      \vspace*{-0.2cm}
+		      }
 \end{itemize}
 % \noindent
 % \newcolumntype{L}{>{\raggedright\arraybackslash}m{13cm}}
@@ -336,49 +407,38 @@ Modeling \& Simulation Lab., advised by \textsl{Jin-gyun Kim} \hfill Jan. 2021 |
 % 	% Development of ground·sea transportation test simulation model using multibody dynamics and DNN-based metamodel, Korea Atomic Energy Research Institute (KAERI). (Codes under classification.)                                                                             & {Sep. 2021 | Oct. 2022} \\
 % \end{longtable}
 
-% % Experience Section
-\section*{GRANTS}
-\noindent
-\newcolumntype{L}{>{\raggedright\arraybackslash}m{13cm}}
-\newcolumntype{R}{>{\raggedright\arraybackslash}m{4cm}}
-\vspace*{-.5cm}
-\begin{longtable}{LR}
-	Deep-learning based reaction force prediction of underwater excavation robot using experimental measurements and dynamic simulation, \href{https://www.kriso.re.kr/eng/}{\textit{Korea Research Institute of Ships and Ocean Engineering (KRISO)}.} & {Mar. 2022 | Oct. 2024} \\
+% % % Experience Section
+% \section*{GRANTS}
+% \noindent
+% \newcolumntype{L}{>{\raggedright\arraybackslash}m{13cm}}
+% \newcolumntype{R}{>{\raggedright\arraybackslash}m{4cm}}
+% \vspace*{-.5cm}
+% \begin{longtable}{LR}
+% 	Deep-learning based reaction force prediction of underwater excavation robot using experimental measurements and dynamic simulation, \href{https://www.kriso.re.kr/eng/}{\textit{Korea Research Institute of Ships and Ocean Engineering (KRISO)}.} & {Mar. 2022 | Oct. 2024} \\
 
-	Metamodel generation and evolution procedures for flexible multibody dynamics, \href{https://functionbay.com/en}{\textit{FunctionBay Inc.}}                                                                                                         & {Mar. 2021 | Feb. 2024} \\
-	% {Apr. 2024 | May. 2024} & Automatic products registration, 8DIVISION. (\href{github.com/leehyeonbeen/AfterCompany-AutoProductReg}{github.com/leehyeonbeen/AfterCompany-AutoProductReg})                                                                                                              \\
+% 	Metamodel generation and evolution procedures for flexible multibody dynamics, \href{https://functionbay.com/en}{\textit{FunctionBay Inc.}}                                                                                                         & {Mar. 2021 | Feb. 2024} \\
+% 	% {Apr. 2024 | May. 2024} & Automatic products registration, 8DIVISION. (\href{github.com/leehyeonbeen/AfterCompany-AutoProductReg}{github.com/leehyeonbeen/AfterCompany-AutoProductReg})                                                                                                              \\
 
-	% 	% {Nov. 2021 | Jan. 2024} & cNN-DP: Composite neural network with differential propagation for impulsive nonlinear dynamics, Modeling \& Simulation Lab. (\href{https://github.com/leehyeonbeen/cNN-DP}{github.com/leehyeonbeen/cNN-DP})                                                               \\
-	% 	Metamodel generation and evolution procedures for flexible multibody dynamics, \textit{FunctionBay Inc.}                                                                                                       & {Sep. 2021 | Jan. 2024} \\
+% 	% 	% {Nov. 2021 | Jan. 2024} & cNN-DP: Composite neural network with differential propagation for impulsive nonlinear dynamics, Modeling \& Simulation Lab. (\href{https://github.com/leehyeonbeen/cNN-DP}{github.com/leehyeonbeen/cNN-DP})                                                               \\
+% 	% 	Metamodel generation and evolution procedures for flexible multibody dynamics, \textit{FunctionBay Inc.}                                                                                                       & {Sep. 2021 | Jan. 2024} \\
 
-	% 	% {Sep. 2023 | Oct. 2023} & ROS SLAM setup package distribution for Apple Silicon devices, Personal project. (\href{github.com/leehyeonbeen/ROS-SLAM-AppleSilicon}{github.com/leehyeonbeen/ROS-SLAM-AppleSilicon})                                                                                     \\
+% 	% 	% {Sep. 2023 | Oct. 2023} & ROS SLAM setup package distribution for Apple Silicon devices, Personal project. (\href{github.com/leehyeonbeen/ROS-SLAM-AppleSilicon}{github.com/leehyeonbeen/ROS-SLAM-AppleSilicon})                                                                                     \\
 
-	% 	% {Mar. 2022 | Aug. 2023} & Bottom-Up codes development of time series AI models: From RNN to advanced Transformers. (\href{github.com/leehyeonbeen/TimeSeriesSeq2Seq}{github.com/leehyeonbeen/TimeSeriesSeq2Seq})                                                                                     \\
+% 	% 	% {Mar. 2022 | Aug. 2023} & Bottom-Up codes development of time series AI models: From RNN to advanced Transformers. (\href{github.com/leehyeonbeen/TimeSeriesSeq2Seq}{github.com/leehyeonbeen/TimeSeriesSeq2Seq})                                                                                     \\
 
-	% 	% {Mar. 2023 | Jun. 2023} & Segment Anyone: Fine-tuned Segment-Anything-Model (SAM) for human-collaborative robots, Kyung Hee University Dept. of Artifical Intelligence. (\href{https://github.com/leehyeonbeen/segment-anything-fine-tuning}{github.com/leehyeonbeen/segment-anything-fine-tuning})  \\
-	% 	% {Dec. 2022 | Jun. 2023} & RecurDyn Automation using Python, Modeling \& Simulation Lab. (\href{https://github.com/leehyeonbeen/RecurDynPython}{github.com/leehyeonbeen/RecurDynPython})                                                                                                              \\
-	Development of ground·sea transportation test simulation model using multi-body dynamics and DNN-based metamodel, \href{https://www.kaeri.re.kr/eng/}{\textit{Korea Atomic Energy Research Institute (KAERI).}}                                     & {Sep. 2021 | Oct. 2022} \\
-\end{longtable}
-
-\section*{SKILLS}
-\begin{itemize}
-	\item \textbf{Programming Languages: }Python, MATLAB, C\#, C++, \LaTeX
-	\item \textbf{Software \& Frameworks: }PyTorch, TensorBoard, Git, Docker, ROS, RecurDyn
-	\item \textbf{Machine learning: }Time series forecasting, Skill-based reinforcement learning, Image segmentation, Self-supervised learning, Physics-informed machine learning, Spectral learning, Metamodeling
-	\item \textbf{Scientific computing: }Multibody dynamics, Finite element methods, Numerical analysis
-	\item \textbf{Natural Languages: }Korean (native), English and Japanese (advanced proficiency)
-	      %   \begin{itemize}
-	      %       \item \textit{Expertised at handling \underline{sequential data and models}}
-	      %   \end{itemize}
-	      % \item \textbf{English: }Speaks at native level
-	      % \item \textbf{Japanese: }Speaks at intermediate level
-\end{itemize}
+% 	% 	% {Mar. 2023 | Jun. 2023} & Segment Anyone: Fine-tuned Segment-Anything-Model (SAM) for human-collaborative robots, Kyung Hee University Dept. of Artifical Intelligence. (\href{https://github.com/leehyeonbeen/segment-anything-fine-tuning}{github.com/leehyeonbeen/segment-anything-fine-tuning})  \\
+% 	% 	% {Dec. 2022 | Jun. 2023} & RecurDyn Automation using Python, Modeling \& Simulation Lab. (\href{https://github.com/leehyeonbeen/RecurDynPython}{github.com/leehyeonbeen/RecurDynPython})                                                                                                              \\
+% 	Development of ground·sea transportation test simulation model using multi-body dynamics and DNN-based metamodel, \href{https://www.kaeri.re.kr/eng/}{\textit{Korea Atomic Energy Research Institute (KAERI).}}                                     & {Sep. 2021 | Oct. 2022} \\
+% \end{longtable}
 
 \section*{TEACHING \& MENTORSHIP}
 \textbf{Research Mentor} \hfill Modeling \& Simulation Lab., Kyung Hee University\\
---- \textsl{Guiding a junior graduate student on time series analysis and modeling.} \hfill Mar. 2025 | Present\\ % Mar. 2022 | Jun. 2023
+--- {\small\textsl{Guiding a junior graduate student on time series analysis and modeling.}} \hfill Mar. 2025 | Present\\ % Mar. 2022 | Jun. 2023
+\vspace*{-0.2cm}
+
+\noindent
 \textbf{Teaching Assistant, Multibody System Dynamics} \hfill Dept. of Mechanical Eng., Kyung Hee University\\
---- \textsl{Lectured on computational multi-body dynamics with  theoretical derivations.} \hfill Mar. 2022 | Jun. 2023 % Mar. 2022 | Jun. 2023
+--- {\small\textsl{Lectured on computational multi-body dynamics with  theoretical derivations.}} \hfill Mar. 2022 | Jun. 2023 % Mar. 2022 | Jun. 2023
 
 % Skills Section
 % \section*{CERTIFICATES}
@@ -445,6 +505,13 @@ Modeling \& Simulation Lab., advised by \textsl{Jin-gyun Kim} \hfill Jan. 2021 |
 % \null\hfill \\ % Sep. 2022 | Feb. 2024
 \textbf{College of Engineering 48th Student Council} \hfill Kyung Hee University, Feb 2019 | Jan. 2020\\
 % \null\hfill \\
-\textbf{R.O.K.-U.S. Combined Marine Corps Interpreter} \hfill 1st Marine Div., ROKMC, Sep 2017 | Feb. 2019\\
+\textbf{R.O.K.-U.S. Combined Marine Corps Interpreter} \hfill 1st Marine Div., ROKMC, Sep 2017 | Feb. 2019
 % End document
+
+% \section*{REFERENCES}
+% Dr. Jin-gyun Kim---\\
+% Dr. Heesun Choi, Incoming professor, \\
+% Dr. Seongji Han --- \\
+% Dr. Joseph J. Lim\\
+% Dr. Sang-hyun Kim
 \end{document}
