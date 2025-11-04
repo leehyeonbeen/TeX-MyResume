@@ -18,6 +18,7 @@
 \usepackage{tabularx, booktabs}
 \usepackage{enumitem}
 \usepackage{xcolor}
+\usepackage{etaremune}
 % Formatting
 \setlist{noitemsep} % Removes item separation
 \titleformat{\section}{\large\bfseries}{\thesection}{1em}{}[\titlerule] % Section title format
@@ -109,13 +110,14 @@
 \section*{EDUCATION}
 \noindent
 \textbf{Kyung Hee University} \hfill Mar. 2022 | Feb. 2024\\ % University name and location
-M.S. in Mechanical Engineering (Advisor: Jin-gyun Kim) \hfill GPA: 3.93/4.0\\ % M.S. 3.93/4.0, 4.10/4.3, 4.33/4.5
+M.S. in Mechanical Engineering {\small(Advisor: Jin-gyun Kim)} \hfill GPA: 4.10/4.3\\ % M.S. 3.93/4.0, 4.10/4.3, 4.33/4.5
 \underline{Thesis}: \textsl{{\small `Composite neural network with differential propagation for modeling impulsive nonlinear dynamic systems'}}\\
 % \hspace*{1.3cm}\textit{\small{}}\\
 {\small\underline{Coursework}: Probability \& Statistics, Advanced linear algebra, ROS, Computer vision \& Artificial intelligence, Data analysis}\\
 \\
-\textbf{Kyung Hee University} \hfill Mar. 2015 | Feb. 2022\\ % University name and location
-B.S. in Mechanical Engineering (Advisor: Jin-gyun Kim, Shinkyu Jeong)\hfill GPA: 3.52/4.0\\ % B.S. Overall 3.52/4.0 ,3.599/4.3, 3.84/4.5
+\textbf{Kyung Hee University} \hfill{\footnotesize(\textsl{Absence for military service in May 2017 | Feb. 2019})}\hspace*{0.25cm} Mar. 2015 | Feb. 2022\\ % University name and location
+B.S. in Mechanical Engineering {\small(Advisor: Jin-gyun Kim, Shinkyu Jeong)}\hfill {(Upper Div.: 4.04/4.3)} GPA: 3.60/4.3\\ % B.S. Overall 3.52/4.0 ,3.599/4.3, 3.84/4.5
+% (Upper Div.: 3.88/4.0) (Upper Div.: 4.04/4.3)
 % Degree and GPA
 \underline{Thesis}: {\small\textsl{{`Data-driven aerodynamic coefficient prediction using deep neural network and PARSEC airfoil parameterization'}}}\\  % B.S. Major 3.51/4.0, 3.573/4.3, ,3.87/4.5 
 % \hspace*{1.3cm}\textit{{\small deep neural
@@ -149,12 +151,13 @@ Robot learning, Sequential modeling, Sim2Real, Multimodal perception, Physics-in
 
 % Experience Section
 \section*{PUBLICATIONS}
-\begin{enumerate}[leftmargin=.5cm]
+\begin{etaremune}[leftmargin=.5cm, itemsep=0.05cm]
 	\item \textbf{H. Lee}, M. Jung, J.G. Kim. (2025), “Forecasting high-frequency robot joint forces in contact-rich manipulation via short-time stationarity and neural frequency filters”, \textsl{Manuscript in preparation.}
+	% \item B. Koo, M. Jung, \textbf{H.lee}, T. Yeu, J.G. Kim, J.B. Han, Y. Lee, D. Park (2025), “Force estimation and haptic feedback of an underwater hydraulic manipulator using a DHP-DNN-based approach”, submitted to \textit{IEEE Robotics and Automation Letters (RA-L)}. ($\bullet$ Note: Formal authorship addition is currently in process)
 	\item \textbf{H. Lee}, S. Han, H.S. Choi, J.G. Kim (2024), “cNN-DP: Composite neural network with differential propagation for impulsive nonlinear dynamics”, \textit{Journal of Computational Physics (WoS IF Top 2.5\% in Physics, Mathematical)}, 112578. \href{https://www.sciencedirect.com/science/article/pii/S0021999123006733?casa_token=ARUkhI8XI8YAAAAA:wTzCIauJvSlonWw-J-SlAFqPX6NZRQS-qBX59l4YN5O3caEppoglU0duVmMkZYf4nWYd7tm_D_E}{\color{blue}[link]} \href{https://github.com/leehyeonbeen/cNN-DP}{\color{blue}[GitHub]}
-	      % \item \href{https://easychair.org/publications/preprint/WkF3}{J.H. Han, J.B. Han, S.S. Kim, M.H. Kim, Y.H. Kim, \textbf{H. Lee}, J.G. Kim, T.K. Yeu. (2024), ``Digital twin model of underwater construction robot for real-time grinding simulation", \textit{7th International Conference on Multibody System Dynamics}.}
+	% \item \href{https://easychair.org/publications/preprint/WkF3}{J.H. Han, J.B. Han, S.S. Kim, M.H. Kim, Y.H. Kim, \textbf{H. Lee}, J.G. Kim, T.K. Yeu. (2024), ``Digital twin model of underwater construction robot for real-time grinding simulation", \textit{7th International Conference on Multibody System Dynamics}.}
 	\item S. Han, G.E. Jeong, \textbf{H. Lee}, W.S. Choi, J.G. Kim (2023), “Multi-body dynamics model for spent nuclear fuel transportation system under normal transport test conditions”, \textit{Nuclear Engineering and Technology (WoS IF Top 13.7\% in Nuclear Science \& Technology)}, 55(11), 4125-4133. \href{https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwij36zWpNKCAxXMMEQIHSBfBMUQFnoECBEQAQ&url=https%3A%2F%2Fwww.sciencedirect.com%2Fscience%2Farticle%2Fpii%2FS1738573323003492&usg=AOvVaw1zj_G3k5c77uhMNnmu0EEC&opi=89978449}{\color{blue}[link]}
-\end{enumerate}
+\end{etaremune}
 
 
 \section*{RESEARCH EXPERIENCES}
@@ -341,10 +344,10 @@ Modeling \& Simulation Lab., advised by \textsl{Jin-gyun Kim} \hfill Jan. 2021 |
 \section*{SKILLS}
 \begin{itemize}
 	\item \textbf{Programming Languages: }Python $\cdot$ MATLAB $\cdot$ C\# $\cdot$ C++ $\cdot$ \LaTeX
-	\item \textbf{Software \& Frameworks: }PyTorch $\cdot$ TensorBoard $\cdot$ Git $\cdot$ Docker $\cdot$ ROS $\cdot$ RecurDyn $\cdot$ Gazebo $\cdot$ MuJoCo
+	\item \textbf{Software \& Frameworks: }PyTorch $\cdot$ Git $\cdot$ Docker $\cdot$ ROS $\cdot$ RecurDyn $\cdot$ Gazebo $\cdot$ MuJoCo $\cdot$ OpenAI API
 	      % \item \textbf{Machine Learning: }Time series forecasting $\cdot$ Skill-based reinforcement learning $\cdot$ Image segmentation $\cdot$ Self-supervised learning $\cdot$ $\cdot$ Physics-informed learning $\cdot$ Frequency domain learning $\cdot$ Foundation model fine-tuning
 	\item \textbf{Scientific Computing: }Flexible multibody dynamics $\cdot$ Finite element methods $\cdot$ Numerical analysis
-	\item \textbf{Natural Languages: }Korean (Native) $\cdot$ English and Japanese (Advanced proficiency)
+	\item \textbf{Natural Languages: }Korean (Native) $\cdot$ English (TOEFL iBT 111) $\cdot$ Japanese (Advanced proficiency)
 	      %   \begin{itemize}
 	      %       \item \textit{Expertised at handling \underline{sequential data and models}}
 	      %   \end{itemize}
@@ -531,7 +534,7 @@ Modeling \& Simulation Lab., advised by \textsl{Jin-gyun Kim} \hfill Jan. 2021 |
 % \null\hfill \\ % Sep. 2022 | Feb. 2024
 \textbf{College of Engineering 48th Student Council} \hfill Kyung Hee University, Feb 2019 | Jan. 2020\\
 % \null\hfill \\
-\textbf{R.O.K.-U.S. Combined Marine Corps Interpreter} \hfill 1st Marine Div., ROKMC, Sep 2017 | Feb. 2019
+\textbf{U.S.-R.O.K. Combined Marine Corps Interpreter} \hfill 1st Marine Div., ROKMC, Sep 2017 | Feb. 2019
 % End document
 
 % \section*{REFERENCES}
