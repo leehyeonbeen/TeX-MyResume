@@ -4,7 +4,8 @@
 % Packages
 \usepackage[utf8]{inputenc} % For input encoding
 \usepackage{geometry} % For page margins
-\geometry{a4paper, left=1.0cm, right=1.0cm, top=0.7cm, bottom=1.2cm} % Set paper size and margins
+\geometry{a4paper, left=1.3cm, right=1.3cm, top=0.8cm, bottom=1.0cm} % Set paper size and margins
+% \geometry{a4paper, left=0.8in, right=0.8in, top=0.5in, bottom=0.7in} % UMich
 \usepackage{xhfill}
 \usepackage{titlesec} % For section title formatting
 \usepackage{enumitem} % For itemized list formatting
@@ -42,11 +43,15 @@
 % \pagenumbering{arabic}
 
 % Header
+% \begin{center} % UMich
+% 	{\footnotesize Curriculum Vitae/Resume $\bullet$ Robotics Ph.D., University of Michigan}\\
+% 	\vspace*{-0.1cm}
+% \end{center}
 \begin{center}
 	{\huge \textsc{Hyeonbeen (Edward) Lee}}
 \end{center}
 
-% \vspace*{-0.7cm}
+\vspace*{-0.5cm}
 \begin{center}
 	\href{mailto:edward.hyeonbeen.lee@gmail.com}{edward.hyeonbeen.lee@gmail.com} $\bullet$ \href{https://scholar.google.com/citations?user=TiduRxoAAAAJ}{Google Scholar} $\bullet$ \href{https://github.com/leehyeonbeen}{GitHub (@leehyeonbeen)}
 \end{center}
@@ -114,13 +119,13 @@
 \section*{EDUCATION}
 \noindent
 \textbf{Kyung Hee University} \hfill Mar. 2022 | Feb. 2024\\ % University name and location
-M.Eng. in Mechanical Engineering {\small(Advisor: Jin-Gyun Kim)} \hfill GPA: 4.10/4.3\\ % M.S. 3.93/4.0, 4.10/4.3, 4.33/4.5
+M.Eng. in Mechanical Engineering {\small(Advisor: Jin-Gyun Kim)} \hfill GPA: 4.10/4.3\\ % M.S. 3.913/4.0, 4.10/4.3, 4.33/4.5
 \underline{Thesis}: \textsl{{\small `Composite neural network with differential propagation for modeling impulsive nonlinear dynamic systems'}}\\
 % \hspace*{1.3cm}\textit{\small{}}\\
 {\small\underline{Coursework}: Probability \& Statistics, Advanced linear algebra, ROS, Computer vision \& Artificial intelligence, Data analysis}\\
 \\
 \textbf{Kyung Hee University} \hfill Mar. 2015 | Feb. 2022\\ % University name and location
-B.Eng. in Mechanical Engineering {\small(Advisor: Jin-Gyun Kim, Shinkyu Jeong)}\hfill {(\ul{Upper Div.: 4.04/4.3})} GPA: 3.60/4.3\\ % B.S. Overall 3.52/4.0 ,3.599/4.3, 3.84/4.5
+B.Eng. in Mechanical Engineering {\small(Advisor: Jin-Gyun Kim, Shinkyu Jeong)}\hfill {(\ul{Upper Div.: 4.04/4.3})} GPA: 3.60/4.3\\ % B.S. Overall 3.518/4.0 ,3.599/4.3, 3.84/4.5
 % (Upper Div.: 3.88/4.0) (Upper Div.: 4.04/4.3)
 % Degree and GPA
 \underline{Thesis}: {\small\textsl{{`Data-driven aerodynamic coefficient prediction using deep neural network and PARSEC airfoil parameterization'}}}\\  % B.S. Major 3.51/4.0, 3.573/4.3, ,3.87/4.5 
@@ -156,14 +161,27 @@ B.Eng. in Mechanical Engineering {\small(Advisor: Jin-Gyun Kim, Shinkyu Jeong)}\
 
 % Experience Section
 \section*{PUBLICATIONS}
+\vspace*{-0.2cm}
+\subsection*{Journal Papers}
 \begin{etaremune}[leftmargin=.5cm, itemsep=0.05cm]
 	\item \textbf{H. Lee}, M. Jung, J.G. Kim et al., “Forecasting high-frequency contact force dynamics via short-time stationarity and freqeuncy-aware neural filters”, \textit{Manuscript in preparation.}
 
 	\item B. Koo, M. Jung, \textbf{H. Lee}, T. Yeu, J.G. Kim, J.B. Han, Y. Lee, D. Park, “Force estimation and haptic feedback of an underwater hydraulic manipulator using a DHP-DNN-based approach”, under review at \textit{IEEE Robotics and Automation Letters}. % {\small({$*$ Formal authorship addition is currently in process})}
 
-	\item \textbf{H. Lee}, S. Han, H.S. Choi, J.G. Kim (2024), “cNN-DP: Composite neural network with differential propagation for impulsive nonlinear dynamics”, \textit{Journal of Computational Physics (WoS IF Top 2.5\% in Physics, Mathematical)}, 112578. \href{https://www.sciencedirect.com/science/article/pii/S0021999123006733?casa_token=ARUkhI8XI8YAAAAA:wTzCIauJvSlonWw-J-SlAFqPX6NZRQS-qBX59l4YN5O3caEppoglU0duVmMkZYf4nWYd7tm_D_E}{[link]} \href{https://github.com/leehyeonbeen/cNN-DP}{[code]}
+	\item \textbf{H. Lee}, S. Han, H.S. Choi, J.G. Kim (2024), “cNN-DP: Composite neural network with differential propagation for impulsive nonlinear dynamics”, \textit{Journal of Computational Physics (WoS IF Top 2.5\% in Physics, Mathematical)}, 112578. \href{https://www.sciencedirect.com/science/article/pii/S0021999123006733}{[link]} \href{https://github.com/leehyeonbeen/cNN-DP}{[code]}
 
-	\item S. Han$^*$, G.E. Jeong$^*$, \textbf{H. Lee}, W.S. Choi, J.G. Kim (2023), “Multi-body dynamics model for spent nuclear fuel transportation system under normal transport test conditions”, \textit{Nuclear Engineering and Technology (WoS IF Top 13.7\% in Nuclear Science \& Technology)}, 55(11), 4125-4133. {\small ($^*$Co-first authors)} \href{https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwij36zWpNKCAxXMMEQIHSBfBMUQFnoECBEQAQ&url=https%3A%2F%2Fwww.sciencedirect.com%2Fscience%2Farticle%2Fpii%2FS1738573323003492&usg=AOvVaw1zj_G3k5c77uhMNnmu0EEC&opi=89978449}{[link]}
+	\item S. Han$^*$, G.E. Jeong$^*$, \textbf{H. Lee}, W.S. Choi, J.G. Kim (2023), “Multi-body dynamics model for spent nuclear fuel transportation system under normal transport test conditions”, \textit{Nuclear Engineering and Technology (WoS IF Top 13.7\% in Nuclear Science \& Technology)}, 55(11), 4125-4133. {\small ($^*$Co-first authors)} \href{https://www.sciencedirect.com/science/article/pii/S1738573323003492}{[link]}
+\end{etaremune}
+
+\vspace*{-0.6cm}
+\subsection*{Conferences \& Proceedings}
+\begin{etaremune}[leftmargin=.5cm, itemsep=0.05cm]
+	\item J.H. Han, J.B. Han, S.S. Kim, M.H. Kim, Y.H. Kim, \textbf{H. Lee}, J.G. Kim, T.K. Yeu. “Digital twin model of underwater construction robot for real-time grinding simulation”, \textit{7th International Conference on Multibody System Dynamics}, Madison, WI, USA, Jun. 2024 \href{https://easychair.org/publications/preprint/WkF3}{[link]}
+	\item \textbf{H. Lee}, J. Han, T.K. Yeu, J.G. Kim. “Real-time multi-horizon reaction force forecasting of marine robot using interpretable Transformer”, \textit{Korean Society of Mechanical Engineers} (Oral Presentation), Incheon, South Korea, Nov. 2023  \href{https://www.dbpia.co.kr/Journal/articleDetail?nodeId=NODE11709087}{[link]}
+	\item \textbf{H. Lee,} S. Han, H.S. Choi, J.G. Kim. “Meta-modeling of nonlinear impulsive dynamics using composite neural network model with differential propagation”, \textit{Korean Society of Mechanical Engineers} (\textbf{Excellent Paper Award}, Oral Presentation, $*$ Extended works from IMAC 2023), Busan, South Korea, May 2023. \href{https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11511050}{[link]}
+	% \item \textbf{H. Lee,} S. Han, H.S. Choi, J.G. Kim. “Composite neural network with differentiation propagation for modeling nonlinear impulsive dynamics”, \textit{Conference on Dynamics and Control, Korean Society of Mechanical Engineers} (Oral Presentation), Jeju, South Korea, Mar 2023 \href{https://www.dbpia.co.kr/Journal/articleDetail?nodeId=NODE11527668}{[link]}
+	\item \textbf{H. Lee,} S. Han, H.S. Choi, J.G. Kim. “Composite neural network framework for modeling impulsive nonlinear dynamic responses”, \textit{41st International Modal Analysis Conference (IMAC)} (Oral Presentation), Austin, TX, USA, Feb. 2023 \href{https://link.springer.com/chapter/10.1007/978-3-031-34946-1_21}{[link]}
+	\item \textbf{H. Lee}, J.G. Kim. “Development of multibody dynamics trailer model using normal transportation test data and DNN based surrogate model generation”, \textit{Korean Society for Noise and Vibration Engineering} (Oral Presentation), Jeju, South Korea, Dec 2022
 \end{etaremune}
 
 
@@ -326,19 +344,20 @@ Modeling \& Simulation Lab., advised by \textsl{Jin-Gyun Kim} \hfill Jan. 2021 |
 % \end{tasks}
 
 % Experience Section
-\section*{CONFERENCES}
-\noindent
-\newcolumntype{L}{>{\raggedright\arraybackslash}m{14cm}}
-\newcolumntype{R}{>{\raggedright\arraybackslash}m{5cm}}
-\vspace*{-.5cm}
-\begin{longtable}{LR}
-	J.H. Han, J.B. Han, S.S. Kim, M.H. Kim, Y.H. Kim, \textbf{H. Lee}, J.G. Kim, T.K. Yeu. “Digital twin model of underwater construction robot for real-time grinding simulation”, \textit{7th International Conference on Multibody System Dynamics.} \href{https://easychair.org/publications/preprint/WkF3}{[link]}                                                                                              & {Jun. 9 2024 \linebreak Madison, WI, USA}     \\
-	\textbf{H. Lee}, J. Han, T.K. Yeu, J.G. Kim. “Real-time multi-horizon reaction force forecasting of marine robot using interpretable Transformer”, \textit{Korean Society of Mechanical Engineers} (Oral Presentation). \href{https://www.dbpia.co.kr/Journal/articleDetail?nodeId=NODE11709087}{[link]}                                                                                                         & {Nov. 1 2023 \linebreak Incheon, South Korea} \\
-	\textbf{H. Lee,} S. Han, H.S. Choi, J.G. Kim. “Meta-modeling of nonlinear impulsive dynamics using composite neural network model with differential propagation”, \textit{Korean Society of Mechanical Engineers} (\textbf{Excellent Paper Award}, Oral Presentation). {\small($*$ Extended works from IMAC 2023 presentation)} \href{https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11511050}{[link]} & {May 18 2023 \linebreak Busan, South Korea}   \\
-	% \href{https://www.dbpia.co.kr/Journal/articleDetail?nodeId=NODE11527668}{\textbf{H. Lee,} S. Han, H.S. Choi, J.G. Kim. “Composite Neural Network with Differentiation Propagation for Modeling Nonlinear Impulsive Dynamics”, \textit{Conference on Dynamics and Control, Korean Society of Mechanical Engineers} (Oral Presentation)}.                                        & {Mar. 23 2023 \linebreak Jeju, South Korea}   \\
-	\textbf{H. Lee,} S. Han, H.S. Choi, J.G. Kim. “Composite neural network framework for modeling impulsive nonlinear dynamic responses”, \textit{41st International Modal Analysis Conference (IMAC)} (Oral Presentation). \href{https://link.springer.com/chapter/10.1007/978-3-031-34946-1_21}{[link]}                                                                                                           & {Feb. 16 2023 \linebreak  Austin, TX, USA}    \\
-	\textbf{H. Lee}, J.G. Kim. “Development of multibody dynamics trailer model using normal transportation test data and DNN based surrogate model generation”, \textit{Korean Society for Noise and Vibration Engineering} (Oral Presentation).                                                                                                                                                                    & {Dec. 4 2022 \linebreak Jeju, South Korea}    \\
-\end{longtable}
+% \section*{CONFERENCES}
+% \begin{etaremune}[leftmargin=.5cm, itemsep=0.05cm]
+% \noindent
+% \newcolumntype{L}{>{\raggedright\arraybackslash}m{14cm}}
+% \newcolumntype{R}{>{\raggedright\arraybackslash}m{5cm}}
+% \vspace*{-.5cm}
+% \begin{longtable}{LR}
+% 	J.H. Han, J.B. Han, S.S. Kim, M.H. Kim, Y.H. Kim, \textbf{H. Lee}, J.G. Kim, T.K. Yeu. “Digital twin model of underwater construction robot for real-time grinding simulation”, \textit{7th International Conference on Multibody System Dynamics.} \href{https://easychair.org/publications/preprint/WkF3}{[link]}                                                                                              & {Jun. 9 2024 \linebreak Madison, WI, USA}     \\
+% 	\textbf{H. Lee}, J. Han, T.K. Yeu, J.G. Kim. “Real-time multi-horizon reaction force forecasting of marine robot using interpretable Transformer”, \textit{Korean Society of Mechanical Engineers} (Oral Presentation). \href{https://www.dbpia.co.kr/Journal/articleDetail?nodeId=NODE11709087}{[link]}                                                                                                         & {Nov. 1 2023 \linebreak Incheon, South Korea} \\
+% 	\textbf{H. Lee,} S. Han, H.S. Choi, J.G. Kim. “Meta-modeling of nonlinear impulsive dynamics using composite neural network model with differential propagation”, \textit{Korean Society of Mechanical Engineers} (\textbf{Excellent Paper Award}, Oral Presentation). {\small($*$ Extended works from IMAC 2023 presentation)} \href{https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11511050}{[link]} & {May 18 2023 \linebreak Busan, South Korea}   \\
+% 	% \href{https://www.dbpia.co.kr/Journal/articleDetail?nodeId=NODE11527668}{\textbf{H. Lee,} S. Han, H.S. Choi, J.G. Kim. “Composite Neural Network with Differentiation Propagation for Modeling Nonlinear Impulsive Dynamics”, \textit{Conference on Dynamics and Control, Korean Society of Mechanical Engineers} (Oral Presentation)}.                                        & {Mar. 23 2023 \linebreak Jeju, South Korea}   \\
+% 	\textbf{H. Lee,} S. Han, H.S. Choi, J.G. Kim. “Composite neural network framework for modeling impulsive nonlinear dynamic responses”, \textit{41st International Modal Analysis Conference (IMAC)} (Oral Presentation). \href{https://link.springer.com/chapter/10.1007/978-3-031-34946-1_21}{[link]}                                                                                                           & {Feb. 16 2023 \linebreak  Austin, TX, USA}    \\
+% 	\textbf{H. Lee}, J.G. Kim. “Development of multibody dynamics trailer model using normal transportation test data and DNN based surrogate model generation”, \textit{Korean Society for Noise and Vibration Engineering} (Oral Presentation).                                                                                                                                                                    & {Dec. 4 2022 \linebreak Jeju, South Korea}    \\
+% \end{longtable}
 
 \section*{AWARDS \& SCHOLARSHIPS}
 \begin{itemize}
