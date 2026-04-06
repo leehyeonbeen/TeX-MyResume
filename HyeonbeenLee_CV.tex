@@ -4,7 +4,7 @@
 % Packages
 \usepackage[utf8]{inputenc} % For input encoding
 \usepackage{geometry} % For page margins
-\geometry{a4paper, left=1.3cm, right=1.3cm, top=0.8cm, bottom=1.0cm} % Set paper size and margins
+\geometry{a4paper, left=1cm, right=1cm, top=0.8cm, bottom=1cm} % Set paper size and margins
 % \geometry{a4paper, left=0.8in, right=0.8in, top=0.5in, bottom=0.7in} % UMich
 \usepackage{xhfill}
 \usepackage{titlesec} % For section title formatting
@@ -24,6 +24,8 @@
 \usepackage{etaremune}
 \usepackage{academicons}
 \usepackage{fontawesome}
+\usepackage{eso-pic}
+\newcommand{\lastupdated}{\today}
 % Formatting
 \setlist{noitemsep} % Removes item separation
 \titleformat{\section}{\large\bfseries}{\thesection}{1em}{}[\titlerule] % Section title format
@@ -47,13 +49,21 @@
 % {\footnotesize Curriculum Vitae/Resume $\bullet$ Robotics Ph.D., University of Michigan}\\
 % \vspace*{-0.2cm}
 % \end{center}
+\AddToShipoutPictureFG*{%
+  \put(\LenToUnit{\paperwidth-1cm},\LenToUnit{\paperheight-0.6cm}){%
+    \makebox[0pt][r]{\footnotesize Last updated: \lastupdated}%
+  }%
+}
+
+
+
 \begin{center}
 	{\huge \textsc{Hyeonbeen (Edward) Lee}}
 \end{center}
 
-\vspace*{-0.5cm}
+\vspace*{-0.3cm}
 \begin{center}
-	\href{mailto:edward.hyeonbeen.lee@gmail.com}{edward.hyeonbeen.lee@gmail.com} $\bullet$ \href{https://scholar.google.com/citations?user=TiduRxoAAAAJ}{Google Scholar} $\bullet$ \href{https://github.com/leehyeonbeen}{GitHub (@leehyeonbeen)}
+	\href{mailto:edwardlee@vt.edu}{edwardlee@vt.edu} $\bullet$ \href{https://leehyeonbeen.github.io}{Website} $\bullet$ \href{https://scholar.google.com/citations?user=puK1rBEAAAAJ}{Scholar} $\bullet$ \href{https://www.linkedin.com/in/leehyeonbeen/}{LinkedIn} $\bullet$ \href{https://github.com/leehyeonbeen}{GitHub}
 \end{center}
 
 % \begin{center}
@@ -118,20 +128,24 @@
 % Education Section
 \section*{EDUCATION}
 \noindent
-\textbf{Kyung Hee University} \hfill Mar. 2022 | Feb. 2024\\ % University name and location
-M.Eng. in Mechanical Engineering {\small(Advisor: Jin-Gyun Kim)} \hfill GPA: 3.93/4.0\\ % M.S. 3.933/4.0, 4.10/4.3, 4.33/4.5
+\textbf{Virginia Tech}, Blacksburg, VA, USA \hfill Aug. 2026 | May 2031 (Expected)\\ % University name and location
+Ph.D. in Mechanical Engineering {\small(Advisor: \href{https://simonstepputtis.com/}{Simon Stepputtis})} \hfill \\ %GPA: -\\
+\underline{Research Focus}: Robotics, Neurosymbolic AI, Physics-aware Robot Learning\\
+\\
+\textbf{Kyung Hee University}, Seoul, South Korea \hfill Mar. 2022 | Feb. 2024\\ % University name and location
+M.Eng. in Mechanical Engineering {\small(Advisor: \href{https://www.jin-gyun-kim.com/}{Jin-Gyun Kim})} \hfill GPA: 3.93/4.0\\ % M.S. 3.933/4.0, 4.10/4.3, 4.33/4.5
 \underline{Thesis}: \textsl{{\small `Composite neural network with differential propagation for modeling impulsive nonlinear dynamic systems'}}\\
 % \hspace*{1.3cm}\textit{\small{}}\\
-{\small\underline{Coursework}: Probability \& Statistics, Advanced linear algebra, ROS, Computer vision \& Artificial intelligence, Data analysis}\\
+% {\small\underline{Coursework}: Probability \& Statistics, Advanced linear algebra, ROS, Computer vision \& Artificial intelligence, Data analysis}\\
 \\
-\textbf{Kyung Hee University} \hfill Mar. 2015 | Feb. 2022\\ % University name and location
-B.Eng. in Mechanical Engineering {\small(Advisor: Jin-Gyun Kim, Shinkyu Jeong)}\hfill {(\ul{Upper Div.: 3.88/4.0})} GPA: 3.52/4.0\\ % B.S. Overall 3.517/4.0 ,3.599/4.3, 3.84/4.5
+\textbf{Kyung Hee University}, Seoul, South Korea \hfill Mar. 2015 | Feb. 2022\\ % University name and location
+B.Eng. in Mechanical Engineering {\small(Advisor: \href{https://www.jin-gyun-kim.com/}{Jin-Gyun Kim}, \href{https://scholar.google.com/citations?user=j2drPmMAAAAJ}{Shinkyu Jeong})}\hfill {(\ul{Upper Div.: 3.88/4.0})} GPA: 3.52/4.0\\ % B.S. Overall 3.517/4.0 ,3.599/4.3, 3.84/4.5
 % (Upper Div.: 3.878/4.0) (Upper Div.: 4.04/4.3)
 % Degree and GPA
 \underline{Thesis}: {\small\textsl{{`Data-driven aerodynamic coefficient prediction using deep neural network and PARSEC airfoil parameterization'}}}\\  % B.S. Major 3.509/4.0, 3.573/4.3, ,3.87/4.5 
 % \hspace*{1.3cm}\textit{{\small deep neural
 % network and PARSEC airfoil parameterization'}} \\
-{\small\underline{Coursework}: Computational dynamics, Robotics, Convex optimization \& Deep learning, Numerical analysis, Finite element methods, Algorithm \& programming, Thermo \& fluid dynamics}\\
+% {\small\underline{Coursework}: Computational dynamics, Robotics, Convex optimization \& Deep learning, Numerical analysis, Finite element methods, Algorithm \& programming, Thermo \& fluid dynamics}\\
 % \textbf{Banpo High School}, Science-specialized Track \hfill Mar. 2012 | Feb. 2015
 {\footnotesize{($*$ Leave of absence for military service: May 2017 | Feb. 2019)}}
 
@@ -165,7 +179,7 @@ B.Eng. in Mechanical Engineering {\small(Advisor: Jin-Gyun Kim, Shinkyu Jeong)}\
 \subsection*{Journal Papers}
 \begin{etaremune}[leftmargin=.5cm, itemsep=0.05cm]
 	% \item \textbf{H. Lee}, M. Jung, J.G. Kim et al., “Forecasting high-frequency contact force dynamics via short-time stationarity and freqeuncy-aware neural filters”, \textit{Manuscript in preparation.}
-	\item \textbf{H. Lee}, M. Jung, J.G. Kim et al., ``Frequency-aware probabilistic learning for sensorless force/torque forecasting on a contact-rich hydraulic manipulator", \textit{Manuscript in preparation.}
+	\item \textbf{H. Lee}, M. Jung, T.K.~Yeu, J.B.~Han, D.~Park, J.G. Kim (2026), ``Frequency-aware decomposition learning for sensorless wrench forecasting on a vibration-rich hydraulic manipulator", submitted to \textit{IEEE/ASME Transactions on Mechatronics.} \href{}{[preprint]}
 
 	\item B. Koo, M. Jung, \textbf{H. Lee}, T. Yeu, J.G. Kim, J.B. Han, Y. Lee, D. Park, “Buoyancy-integrated hybrid reaction force estimation method with real-time haptic feedback for underwater hydraulic manipulation”, under review at \textit{IEEE Robotics and Automation Letters (RA-L).} % {\small({$*$ Formal authorship addition is currently in process})}
 
@@ -220,7 +234,7 @@ Modeling \& Simulation Lab., advised by \textsl{Jin-Gyun Kim} \hfill Mar. 2024 |
 	\footnotesize
 	\begin{itemize}
 		\item Accelerated and improved the force model for real-time deployment in the control loop for \href{https://www.kriso.re.kr/eng/}{\underline{KRISO}}. Independently secured the project for a year.
-		\item \textbf{Ongoing:} Extended the generative frequency-aware force model as a generalizable framework. Finalizing a manuscript for a first-author publication.
+		\item \textbf{Ongoing:} Extended the frequency-aware probabilistic force estimation model as a generalizable framework. Finalizing a manuscript for a first-author publication.
 		      % \item Executed a national research grant (\href{https://www.kriso.re.kr/eng/}{KRISO}) by improving the accuracy and inference speed of the force forecasting model.
 		      % \item Accelerated inference by structural parallelization, compiling, and mixed precision for real-time system application.
 	\end{itemize}
@@ -591,7 +605,7 @@ Modeling \& Simulation Lab., advised by \textsl{Jin-Gyun Kim} \hfill Jan. 2021 |
 
 	\item \textbf{Hee-Sun Choi}, Ph.D.
 
-	      \quad{\small Incoming Professor at Department of Artificial Intelligence and Robotics, Sejong University (\href{mailto:mdefptheia@gmail.com}{mdefptheia@gmail.com})}%{\Vhrulefill} 
+	      \quad{\small Assistant Professor at Department of Artificial Intelligence and Robotics, Sejong University (\href{mailto:heesunchoi@sejong.ac.kr}{heesunchoi@sejong.ac.kr})}%{\Vhrulefill} 
 
 	\item \textbf{Seongji Han}, Ph.D.
 
