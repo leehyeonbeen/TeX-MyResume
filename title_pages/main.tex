@@ -1,0 +1,100 @@
+\documentclass{article}
+\usepackage[left=1in, right=1in, top=1in, bottom=1in]{geometry}
+\usepackage{hyperref, enumitem,etaremune}
+
+\newcommand{\fdntitle}{Frequency-aware~Decomposition~Learning for Sensorless~Wrench~Forecasting on a Hydraulic~Manipulator}
+\newcommand{\fdnauthors}{Hyeonbeen~Lee, Min-Jae~Jung, Tae-Kyung~Yeu, Jong-Boo~Han, Daegil~Park, and Jin-Gyun~Kim}
+\newcommand{\fdnvenue}{IEEE/ASME Transactions on Mechatronics}
+\newcommand{\fdndate}{April 13, 2026}
+\newcommand{\fdnabstract}{Force and torque (F/T) sensing is critical for robot-environment interaction, but physical F/T sensors impose constraints in size, cost, and fragility. To mitigate this, recent studies have estimated force/wrench sensorlessly from robot internal states. While existing methods generally target relatively slow interactions, tasks involving rapid interactions, such as grinding, can induce task-critical high-frequency vibrations, and estimation in such robotic settings remains underexplored. To address this gap, we propose a Frequency-aware Decomposition Network (FDN) for short-term forecasting of vibration-rich wrench from proprioceptive history. FDN predicts spectrally decomposed wrench with asymmetric deterministic and probabilistic heads, modeling the high-frequency residual as a learned conditional distribution. It further incorporates frequency-awareness to adaptively enhance input spectra with learned filtering and impose a frequency-band prior on the outputs. We pretrain FDN on a large-scale open-source robot dataset and transfer the learned proprioception-to-wrench representation to the downstream. On real-world grinding excavation data from a 6-DoF hydraulic manipulator and under a delayed estimation setting, FDN outperforms baseline estimators and forecasters in the high-frequency band and remains competitive in the low-frequency band. Transfer learning provides additional gains, suggesting the potential of large-scale pretraining and transfer learning for robotic wrench estimation. Code and data will be made available upon acceptance.}
+
+\begin{document}
+\begin{titlepage}
+    \begin{center}
+        \vspace*{1cm}
+        \huge
+        \textbf{\fdntitle{}}
+            
+        \vspace{1.5cm}
+        
+        \LARGE
+        \fdnauthors
+            
+        \vfill
+        
+        \Large A manuscript submitted to \\
+        \LARGE
+        \fdnvenue{}\\
+        \vspace{0.3cm}
+        \large
+        (Manuscript ID: TMECH-04-2026-24367)
+            
+        \vspace{0.8cm}
+            
+        % \includegraphics[width=0.4\textwidth]{university}
+            
+        \Large
+        \fdndate
+        \vspace*{1cm}
+    \end{center}
+\end{titlepage}
+
+\thispagestyle{plain}
+\vspace*{1.5cm}
+\begin{center}
+    \LARGE
+    \fdntitle
+    
+    \Large
+    \vspace{0.4cm}
+    \fdnauthors
+       
+    \vspace{0.9cm}
+    \textbf{Abstract}
+\end{center}
+\large
+\fdnabstract{}
+\vspace*{1cm}\\
+Preprint: \href{https://arxiv.org/abs/2604.12905}{https://arxiv.org/abs/2604.12905}\\
+Code: \href{https://github.com/leehyeonbeen/FDN}{https://github.com/leehyeonbeen/FDN}
+
+\pagebreak
+
+\vspace*{0.5cm}
+\begin{center}
+    \huge
+    List of Journal Publications of \textsl{Hyeonbeen Lee}
+\end{center}
+
+\vspace*{1cm}
+\begin{etaremune}[itemsep=1cm]
+    \Large
+    \item \textbf{H. Lee}, M. Jung, T.K.~Yeu, J.B.~Han, D.~Park, J.G. Kim (2026), ``Frequency-aware decomposition learning for sensorless wrench forecasting on a vibration-rich hydraulic manipulator", submitted to \textit{IEEE/ASME Transactions on Mechatronics.} \href{https://arxiv.org/abs/2604.12905}{[arXiv] \href{https://github.com/leehyeonbeen/FDN}{[code]}}
+
+	\item B. Koo, M. Jung, \textbf{H. Lee}, T. Yeu, J.G. Kim, J.B. Han, Y. Lee, D. Park (2026), “Buoyancy-integrated hybrid reaction force estimation method with real-time haptic feedback for underwater hydraulic manipulation”, submitted to \textit{IEEE Robotics and Automation Letters.} % {\small({$*$ Formal authorship addition is currently in process})}
+
+	\item \textbf{H. Lee}, S. Han, H.S. Choi, J.G. Kim (2024), “cNN-DP: Composite neural network with differential propagation for impulsive nonlinear dynamics”, \textit{Journal of Computational Physics (WoS IF Top 2.5\% in Physics, Mathematical)}, 496, 112578. \href{https://www.sciencedirect.com/science/article/pii/S0021999123006733}{[link]} \href{https://github.com/leehyeonbeen/cNN-DP}{[code]}
+
+	\item S. Han$^*$, G.E. Jeong$^*$, \textbf{H. Lee}, W.S. Choi, J.G. Kim (2023), “Multi-body dynamics model for spent nuclear fuel transportation system under normal transport test conditions”, \textit{Nuclear Engineering and Technology (WoS IF Top 13.7\% in Nuclear Science \& Technology)}, 55(11), 4125-4133. { ($^*$Co-first authors)} \href{https://www.sciencedirect.com/science/article/pii/S1738573323003492}{[link]}
+\end{etaremune}
+
+\pagebreak
+
+\vspace*{0.5cm}
+\begin{center}
+    \huge
+    List of Conference Proceedings of \textsl{Hyeonbeen Lee}
+\end{center}
+
+\vspace*{1cm}
+\begin{etaremune}[itemsep=0.2cm]
+    \Large
+    \item J.H. Han, J.B. Han, S.S. Kim, M.H. Kim, Y.H. Kim, \textbf{H. Lee}, J.G. Kim, T.K. Yeu. “Digital twin model of underwater construction robot for real-time grinding simulation”, \textit{7th International Conference on Multibody System Dynamics}, Madison, WI, USA, Jun. 2024 \href{https://easychair.org/publications/preprint/WkF3}{[link]}
+	\item \textbf{H. Lee}, J. Han, T.K. Yeu, J.G. Kim. “Real-time multi-horizon reaction force forecasting of marine robot using interpretable Transformer”, \textit{Korean Society of Mechanical Engineers} (Oral Presentation), Incheon, South Korea, Nov. 2023  \href{https://www.dbpia.co.kr/Journal/articleDetail?nodeId=NODE11709087}{[link]}
+	\item \textbf{H. Lee,} S. Han, H.S. Choi, J.G. Kim. “Meta-modeling of nonlinear impulsive dynamics using composite neural network model with differential propagation”, \textit{Korean Society of Mechanical Engineers} (\textbf{Excellent Paper Award}, Oral Presentation, $*$ Extended works from IMAC 2023), Busan, South Korea, May 2023. \href{https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11511050}{[link]}
+	\item \textbf{H. Lee,} S. Han, H.S. Choi, J.G. Kim. “Composite neural network with differentiation propagation for modeling nonlinear impulsive dynamics”, \textit{Conference on Dynamics and Control, Korean Society of Mechanical Engineers} (Oral Presentation), Jeju, South Korea, Mar 2023 \href{https://www.dbpia.co.kr/Journal/articleDetail?nodeId=NODE11527668}{[link]}
+	\item \textbf{H. Lee,} S. Han, H.S. Choi, J.G. Kim. “Composite neural network framework for modeling impulsive nonlinear dynamic responses”, \textit{41st International Modal Analysis Conference (IMAC)} (Oral Presentation), Austin, TX, USA, Feb. 2023 \href{https://link.springer.com/chapter/10.1007/978-3-031-34946-1_21}{[link]}
+	\item \textbf{H. Lee}, J.G. Kim. “Development of multibody dynamics trailer model using normal transportation test data and DNN based surrogate model generation”, \textit{Korean Society for Noise and Vibration Engineering} (Oral Presentation), Jeju, South Korea, Dec 2022
+\end{etaremune}
+
+\end{document}
